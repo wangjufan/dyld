@@ -4732,10 +4732,10 @@ static uintptr_t useSimulatorDyld(int fd, const macho_header* mainExecutableMH, 
 
 
 //
-// Entry point for dyld.  The kernel loads dyld and jumps to __dyld_start which
+// Entry point for dyld.  The kernel loads dyld and jumps to __dyld_start 1 which
 // sets up some registers and call this function.
 //
-// Returns address of main() in target program which __dyld_start jumps to
+// Returns address of main() 2 in target program which __dyld_start jumps to
 //
 uintptr_t
 _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide, 
